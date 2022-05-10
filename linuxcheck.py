@@ -7,9 +7,13 @@ commandlist = [
     'service walinuxagent status | grep Active',
     'service walinuxagent status | grep Loaded',
     'cat /etc/ssh/sshd_config | grep PermitRoot',
+    'ifconfig',
+    'cat /etc/*release*',
+    '',
+    '',
     ''
 ]
 for cmd in commandlist:
-    print("!! START", cmd)
+    print("\n\n!! START", cmd)
     os.system(cmd)
     print("!! END", cmd)
