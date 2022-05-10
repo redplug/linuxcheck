@@ -10,6 +10,6 @@ commandlist = [
     ''
 ]
 for cmd in commandlist:
-    print("#### START", cmd)
+    print("!! START", cmd)
     os.system(cmd)
-    print("#### END", cmd)
+    print("!! END", cmd)
