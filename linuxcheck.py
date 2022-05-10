@@ -10,5 +10,5 @@ commandlist = [
     ''
 ]
 for cmd in commandlist:
-    result = os.system(i)
+    result = os.system(cmd)
     print(result)
