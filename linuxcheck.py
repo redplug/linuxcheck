@@ -17,7 +17,7 @@ commandlist = [
     'ifconfig',
     'cat /etc/*release*',
     'cat /etc/network/interfaces',
-    'cat /etcn/netplan/*',
+    'cat /etc/netplan/*',
     'cat /etc/systemd/resolved.conf',
     'cat /etc/resolvconf/resolv.conf.d/tail'
 ]
