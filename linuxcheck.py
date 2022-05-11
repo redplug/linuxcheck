@@ -26,7 +26,7 @@ commandlist = [
 print("1) running everything at once")
 print("2) running step by step (Enter next step)")
 print("3) running 3 second")
-number = int(input("Select Number"))
+number = int(input("Select Number) "))
 if number == 1:
     for cmd in commandlist:
         print("\n!! START !! ", cmd)
