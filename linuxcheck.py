@@ -32,24 +32,33 @@ def CommandRun():
     number = int(input("Select Number) "))
     if number == 1:
         for cmd in commandlist:
-            print("\n!! START !! ", cmd)
+            print()
+            print("!! START !! ", cmd)
             os.system(cmd)
-            print("\n### END ### ", cmd)
-            print("\n\n")
+            print()
+            print("### END ### ", cmd)
+            print()
+            print()
     elif number == 2:
         for cmd in commandlist:
-            print("\n!! START !! ", cmd)
+            print()
+            print("!! START !! ", cmd)
             input("")
             os.system(cmd)
-            print("\n### END ### ", cmd)
-            print("\n\n")
+            print()
+            print("### END ### ", cmd)
+            print()
+            print()
     elif number == 3:
         for cmd in commandlist:
             time.sleep(3)
-            print("\n!! START !! ", cmd)
+            print()
+            print("!! START !! ", cmd)
             os.system(cmd)
-            print("\n### END ### ", cmd)
-            print("\n\n")
+            print()
+            print("### END ### ", cmd)
+            print()
+            print()
     else:
         exit()
 
