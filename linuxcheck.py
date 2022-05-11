@@ -20,7 +20,7 @@ commandlist = [
     'cat /etc/resolvconf/resolv.conf.d/tail'
 ]
 for cmd in commandlist:
-    print("\n\n!! START", cmd)
+    print("\n\n!!! START", cmd)
     print("\n")
     os.system(cmd)
-    print("\n!! END", cmd)
+    print("\n### END", cmd)
