@@ -5,7 +5,7 @@ import os
 import time
 
 
-def cmdlist():
+def CmdList():
     commandlist = [
         'hostname',
         'python --version',
@@ -55,5 +55,5 @@ def CodeRun():
         exit()
 
 
-cmdlist()
+CmdList()
 CodeRun()
