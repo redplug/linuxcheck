@@ -23,6 +23,6 @@ commandlist = [
 ]
 for cmd in commandlist:
     print("\n!! START !! ", cmd)
-    print("\n")
     os.system(cmd)
     print("\n### END ### ", cmd)
+    print("\n\n\n")
