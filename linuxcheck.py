@@ -42,8 +42,8 @@ elif number == 2:
         print("\n\n")
 elif number == 3:
     for cmd in commandlist:
-        print("\n!! START !! ", cmd)
         time.sleep(3)
+        print("\n!! START !! ", cmd)
         os.system(cmd)
         print("\n### END ### ", cmd)
         print("\n\n")
