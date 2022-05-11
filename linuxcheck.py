@@ -5,6 +5,8 @@ import os
 
 commandlist = [
     'hostname',
+    'python --version',
+    'python3 --version',
     'service walinuxagent status | grep Active',
     'service walinuxagent status | grep Loaded',
     'service waagent status | grep Active',
@@ -20,7 +22,7 @@ commandlist = [
     'cat /etc/resolvconf/resolv.conf.d/tail'
 ]
 for cmd in commandlist:
-    print("\n!!! START", cmd)
+    print("\n!!!!!!!!!! START", cmd)
     print("\n")
     os.system(cmd)
-    print("\n### END", cmd)
+    print("\n########## END", cmd)
