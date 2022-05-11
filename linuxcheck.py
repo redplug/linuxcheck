@@ -4,29 +4,28 @@
 import os
 import time
 
+# command list
+commandlist = [
+    'hostname',
+    'python --version',
+    'python3 --version',
+    'service walinuxagent status | grep Active',
+    'service walinuxagent status | grep Loaded',
+    'service waagent status | grep Active',
+    'service waagent status | grep Loaded',
+    'service vasd status | grep Active',
+    'service vasd status | grep Loaded',
+    'cat /etc/ssh/sshd_config | grep PermitRoot',
+    'ifconfig',
+    'cat /etc/*release*',
+    'cat /etc/network/interfaces',
+    'cat /etc/netplan/*',
+    'cat /etc/systemd/resolved.conf',
+    'cat /etc/resolvconf/resolv.conf.d/tail'
+]
 
-def CmdList():
-    commandlist = [
-        'hostname',
-        'python --version',
-        'python3 --version',
-        'service walinuxagent status | grep Active',
-        'service walinuxagent status | grep Loaded',
-        'service waagent status | grep Active',
-        'service waagent status | grep Loaded',
-        'service vasd status | grep Active',
-        'service vasd status | grep Loaded',
-        'cat /etc/ssh/sshd_config | grep PermitRoot',
-        'ifconfig',
-        'cat /etc/*release*',
-        'cat /etc/network/interfaces',
-        'cat /etc/netplan/*',
-        'cat /etc/systemd/resolved.conf',
-        'cat /etc/resolvconf/resolv.conf.d/tail'
-    ]
 
-
-def CodeRun():
+def CommandRun():
     print("1) running everything at once")
     print("2) running step by step (Enter next step)")
     print("3) running every 3 second")
@@ -55,5 +54,4 @@ def CodeRun():
         exit()
 
 
-CmdList()
-CodeRun()
+CommandRun()
