@@ -2,6 +2,7 @@
 # -*- coding: UTF-8 -*-
 
 import os
+import time
 
 commandlist = [
     'hostname',
@@ -21,8 +22,30 @@ commandlist = [
     'cat /etc/systemd/resolved.conf',
     'cat /etc/resolvconf/resolv.conf.d/tail'
 ]
-for cmd in commandlist:
-    print("\n!! START !! ", cmd)
-    os.system(cmd)
-    print("\n### END ### ", cmd)
-    print("\n\n")
+
+print("1) running everything at once")
+print("2) running step by step")
+print("3) running step by step")
+number = input("Select Number")
+if number == 1:
+    for cmd in commandlist:
+        print("\n!! START !! ", cmd)
+        os.system(cmd)
+        print("\n### END ### ", cmd)
+        print("\n\n")
+elif number == 2:
+    for cmd in commandlist:
+        print("\n!! START !! ", cmd)
+        input("Please any Key")
+        os.system(cmd)
+        print("\n### END ### ", cmd)
+        print("\n\n")
+elif number == 3:
+    for cmd in commandlist:
+        print("\n!! START !! ", cmd)
+        time.sleep(3)
+        os.system(cmd)
+        print("\n### END ### ", cmd)
+        print("\n\n")
+else:
+    exit()
